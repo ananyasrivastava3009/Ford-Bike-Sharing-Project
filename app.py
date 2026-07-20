@@ -18,7 +18,8 @@ df = load_data()
 
 @st.cache_resource
 def load_model():
-    return joblib.load("../output/random_forest_model_small.pkl")
+return joblib.load("random_forest_model_small.pkl")
+
 
 model = load_model()
 
