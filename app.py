@@ -12,13 +12,13 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("../output/final_bike_data.csv")
+    return pd.read_csv("final_bike_data_small.csv")
 
 df = load_data()
 
 @st.cache_resource
 def load_model():
-    return joblib.load("../models/random_forest_model.pkl")
+    return joblib.load("../output/random_forest_model_small.pkl")
 
 model = load_model()
 
